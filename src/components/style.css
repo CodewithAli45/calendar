@@ -1,0 +1,114 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.display-time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+    font-size: 22px;
+    width: 350px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.btns{
+    display: flex;
+    gap: 5px;
+}
+.next, .prev{
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: green;
+    color: azure;
+    font-size: 18px;
+    font-weight: bold;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    border-bottom: 1px solid saddlebrown;
+    padding: 5px;
+}
+.month{
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+    padding: 2px 5px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+.display{
+    display: flex;
+    flex-direction: column; 
+    width: 450px;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 0  5px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    /* background-color: rgb(157, 133, 182); */
+}
+.weekdays{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.week, .day{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.days{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    background-color: rgb(99, 99, 96);
+    box-shadow: 2px 2px 0  0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.day{
+    color: beige;
+    padding: 8px;
+}
+.days .current-day{
+    background-color: rgb(236, 141, 141);
+    color: black;
+    border-radius: 25px;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        width: 350px;
+    }
+    .display{
+        width: 350px;
+        gap: 20px;
+    }
+    .week, .day{
+        font-size: 18px;
+    }
+    .day{
+        color: white;
+        font-weight: 700;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    
+}
