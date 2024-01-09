@@ -107,6 +107,9 @@ const Calendar = () => {
                     })}
                 </div>
             </div>
+            <footer>
+                <h2>Ali Murtaza</h2>
+            </footer>
         </div>
     );
 }

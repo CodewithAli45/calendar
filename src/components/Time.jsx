@@ -12,7 +12,7 @@ const Time = () => {
     }, [])
 
     const formatTime = () => {
-        const hours = currentTime.getHours().toString().padStart(2, '0') % 12;
+        const hours = currentTime.getHours().toString().padStart(2, '0') % 12 || 12;
         const minutes = currentTime.getMinutes().toString().padStart(2, '0');
         const second = currentTime.getSeconds().toString().padStart(2, '0');
 
